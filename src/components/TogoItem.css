@@ -1,0 +1,45 @@
+.togo-item {
+  padding: 1rem;
+  display: flex; /*내부 아이템 수평정렬*/
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.15s;
+  user-select: none;
+}
+
+.togo-item:hover {
+  background: #d5b2f7;
+}
+
+.togo-item:hover .remove {
+  opacity: 1;
+}
+
+.togo-item + .togo-item {
+  border-top: 1px solid #f1f3f5;
+}
+
+.remove {
+  margin-right: 1rem;
+  color: #e64980;
+  font-weight: 600;
+  opacity: 0;
+}
+
+.togo-text {
+  flex: 1; /*체크,엑스 제외 공간 다 채우기 */
+  word-break: break-all;
+}
+
+.checked {
+  text-decoration: line-through;
+  color: #adb5bd;
+}
+
+.check-mark {
+  font-size: 1.5rem;
+  line-height: 1rem;
+  margin-left: 1rem;
+  color: #e64980;
+  font-weight: 800;
+}
